@@ -36,7 +36,8 @@ I conducted a controlled experiment on a dataset of Yelp reviews to determine th
 
 
 <img width="982" height="549" alt="image" src="https://github.com/user-attachments/assets/7b56cb17-978f-44bb-8d2e-1cfbbf6e4fd3" />
-See task1_experiment.py for the complete code and analysis.
+    
+  See task1_experiment.py for the complete code and analysis.
 
 🛠️ Task 2: AI Feedback Loop (Web App)
 
