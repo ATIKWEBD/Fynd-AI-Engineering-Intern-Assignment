@@ -2,15 +2,15 @@
 
 Submitted by: Sk Atik Ahemad
 
+Roll No: 421ls5036
+
 College: NIT Rourkela
 
 Submission Date: December 2025
 
 🚀 Live Demo & Repository
 
-👉[ Click Here to Open the Web Application
-](https://fynd-ai-engineering-intern-assignment-gnwkqlasuydetnqjkgsfje.streamlit.app/)
-
+👉 Click Here to Open the Web Application
 
 Note: Both the User Dashboard (for customers) and Admin Dashboard (for managers) are hosted on this single URL using a tabbed interface for better usability and cleaner deployment.
 
@@ -34,25 +34,45 @@ Task 2 (Product): A full-stack Dual-Dashboard Web App where customers submit fee
 
 I conducted a controlled experiment on a dataset of Yelp reviews to determine the best prompting strategy for sentiment analysis.
 
-Methodology & Data Filtering:
+🔬 Strategies Evaluated
 
-Dataset: Sampled from Yelp Reviews (Kaggle).
+I designed three distinct prompting techniques to test how the AI handles sentiment under different constraints.
 
-Sample Size: ~180 Valid Rows.
+🧪 Strategy Name
 
-Note: While 200 rows were processed, ~10% were filtered out during evaluation due to the LLM's Safety Settings blocking reviews with profanity or strict Rate Limiting on the free API tier.
+📝 Prompt Design
 
-Metric: I introduced "Off-by-One Accuracy" (prediction within ±1 star) alongside exact accuracy, as human ratings are subjective.
+🎯 Hypothesis
 
-Results:
+1. Direct (Zero-Shot)
 
-Prompt Strategy
+"Analyze this review and assign a rating (1-5)."
 
-Exact Accuracy
+Efficiency: Relying on the model's innate sentiment capabilities without extra tokens.
 
-Off-by-One Accuracy
+2. Chain of Thought
 
-Verdict
+"Analyze the sentiment step-by-step. Identify keywords. Then rate."
+
+Reasoning: Forcing the model to "think" should improve accuracy on complex/sarcastic reviews.
+
+3. Role Prompting
+
+"You are an expert food critic. Evaluate tone and context..."
+
+Expertise: A persona might catch nuances that a generic assistant misses.
+
+📊 Experiment Results
+
+Data Note: ~180 Valid Rows (20 rows filtered due to Safety Settings/Rate Limits).
+
+🏆 Strategy
+
+🎯 Exact Accuracy
+
+⚖️ Off-by-One Accuracy
+
+📝 Verdict
 
 Direct (Zero-Shot)
 
@@ -60,7 +80,7 @@ Direct (Zero-Shot)
 
 100.00%
 
-🏆 Winner (Most Reliable)
+Winner. Fastest & most reliable for this task.
 
 Chain of Thought
 
@@ -68,7 +88,7 @@ Chain of Thought
 
 85.71%
 
-Slower & Over-analyzed details
+Slower. The "reasoning" steps often over-analyzed minor complaints.
 
 Role Expert
 
@@ -76,7 +96,9 @@ Role Expert
 
 85.71%
 
-Too critical/strict
+Too Strict. The "Critic" persona penalized reviews more heavily than real users.
+
+Key Insight: While exact matches were lower due to subjectivity, the Direct Prompt achieved 100% Off-by-One Accuracy, meaning it never missed the true sentiment by more than 1 star.
 
 See Task1_Sentiment_Analysis.ipynb for the complete code and analysis.
 
