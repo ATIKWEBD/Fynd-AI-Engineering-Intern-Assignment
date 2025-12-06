@@ -2,15 +2,11 @@
 
 Submitted by: Sk Atik Ahemad
 
-Roll No: 421ls5036
-
-College: NIT Rourkela
-
-Submission Date: December 2025
 
 🚀 Live Demo & Repository
 
 👉 Click Here to Open the Web Application
+[https://fynd-ai-engineering-intern-assignment-gnwkqlasuydetnqjkgsfje.streamlit.app]
 
 Note: Both the User Dashboard (for customers) and Admin Dashboard (for managers) are hosted on this single URL using a tabbed interface for better usability and cleaner deployment.
 
@@ -18,7 +14,7 @@ Admin Credentials:
 
 Password: fynd123
 
-📂 GitHub Repository: https://github.com/ATIKWEBD/Fynd-AI-Engineering-Intern-Assignment
+📂 GitHub Repository: [https://github.com/ATIKWEBD/Fynd-AI-Engineering-Intern-Assignment]
 
 📖 Project Overview
 
@@ -30,77 +26,17 @@ Task 1 (Research): A scientific evaluation of 3 prompting strategies to classify
 
 Task 2 (Product): A full-stack Dual-Dashboard Web App where customers submit feedback and managers get instant, actionable AI insights.
 
+
 🧠 Task 1: Prompt Engineering Experiment
 
 I conducted a controlled experiment on a dataset of Yelp reviews to determine the best prompting strategy for sentiment analysis.
 
-🔬 Strategies Evaluated
 
-I designed three distinct prompting techniques to test how the AI handles sentiment under different constraints.
+<img width="999" height="525" alt="image" src="https://github.com/user-attachments/assets/b68b903c-f355-4a4d-b592-7d35bb57f966" />
 
-🧪 Strategy Name
 
-📝 Prompt Design
-
-🎯 Hypothesis
-
-1. Direct (Zero-Shot)
-
-"Analyze this review and assign a rating (1-5)."
-
-Efficiency: Relying on the model's innate sentiment capabilities without extra tokens.
-
-2. Chain of Thought
-
-"Analyze the sentiment step-by-step. Identify keywords. Then rate."
-
-Reasoning: Forcing the model to "think" should improve accuracy on complex/sarcastic reviews.
-
-3. Role Prompting
-
-"You are an expert food critic. Evaluate tone and context..."
-
-Expertise: A persona might catch nuances that a generic assistant misses.
-
-📊 Experiment Results
-
-Data Note: ~180 Valid Rows (20 rows filtered due to Safety Settings/Rate Limits).
-
-🏆 Strategy
-
-🎯 Exact Accuracy
-
-⚖️ Off-by-One Accuracy
-
-📝 Verdict
-
-Direct (Zero-Shot)
-
-65.71%
-
-100.00%
-
-Winner. Fastest & most reliable for this task.
-
-Chain of Thought
-
-60.00%
-
-85.71%
-
-Slower. The "reasoning" steps often over-analyzed minor complaints.
-
-Role Expert
-
-57.14%
-
-85.71%
-
-Too Strict. The "Critic" persona penalized reviews more heavily than real users.
-
-Key Insight: While exact matches were lower due to subjectivity, the Direct Prompt achieved 100% Off-by-One Accuracy, meaning it never missed the true sentiment by more than 1 star.
-
-See Task1_Sentiment_Analysis.ipynb for the complete code and analysis.
+<img width="982" height="549" alt="image" src="https://github.com/user-attachments/assets/7b56cb17-978f-44bb-8d2e-1cfbbf6e4fd3" />
+See task1_experiment.py for the complete code and analysis.
 
 🛠️ Task 2: AI Feedback Loop (Web App)
 
@@ -124,7 +60,7 @@ Actionable Insights: The AI automatically extracts a 5-word summary and a concre
 
 Engineering Decisions
 
-Model: Switched to Gemini 2.0 Flash for superior reasoning speed compared to 1.5.
+Model: Switched to Gemini 2.5 Flash lite for superior reasoning speed compared to 1.5.
 
 Robustness: Implemented JSON Mode enforcement to prevent the app from crashing if the AI outputs unstructured text.
 
@@ -141,7 +77,6 @@ AI Model: Google Gemini API
 Data Handling: Pandas (CSV persistence)
 
 Environment Management: python-dotenv
-
 ⚙️ How to Run Locally
 
 Clone the repository:
@@ -158,7 +93,7 @@ pip install -r requirements.txt
 Set up API Key:
 Create a .env file in the root folder and add your Gemini API Key:
 
-GEMINI_API_KEY="AIzaSy....."
+GOOGLE_API_KEY="AIzaSy....."
 
 
 Run the App:
@@ -166,10 +101,19 @@ Run the App:
 streamlit run app.py
 
 
-📂 File Structure
 
-├── app.py                         # Main Web Application Code
-├── Task1_Sentiment_Analysis.ipynb # Jupyter Notebook for Task 1 Research
-├── reviews_data.csv               # Local database for storing reviews
-├── requirements.txt               # List of dependencies
-└── README.md                      # Documentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
