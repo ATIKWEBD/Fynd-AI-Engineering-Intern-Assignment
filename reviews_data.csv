@@ -1,0 +1,13 @@
+Timestamp,User_Rating,User_Review,AI_Auto_Reply,Admin_Summary,Actionable_Insight,Date,Rating,Review,AI_Response,AI_Summary,Recommended_Action
+2025-12-05 23:09:46,3.0,"Dont Like The Response from The Company
+",Thank you for your feedback!,Error analyzing review,Review manually,,,,,,
+2025-12-05 23:10:51,3.0,"Dont Like The Response from The Company
+",Thank you for your feedback!,Error analyzing review,Review manually,,,,,,
+,,,,,,2025-12-05 23:28,4.0,The Product Delivery Was Very Fast But The Product Packaging Was Not Good,Thank you for your feedback!,Error analyzing review,Check manually
+,,,,,,2025-12-05 23:32,3.0,The Product Delivery Was So Fast But The product packaging was not good,Thank you for your feedback!,Error analyzing review,Check manually
+,,,,,,2025-12-05 23:39,3.0,I liked the product delivery speed but i dont like the product packaging,Thank you for your feedback!,Error analyzing review,Check manually
+,,,,,,2025-12-05 23:41,5.0,good,Thank you for your positive feedback!,Customer had very good experience.,Maintain current high service standards.
+,,,,,,2025-12-05 23:42,5.0,"bad packaging  yet very fast delivery and i need the customer service team to be more active
+","Thank you for your valuable feedback! We're happy to hear about the fast delivery, and we sincerely apologize for the packaging issue and the less-than-active customer service experience. We are actively working to improve both areas.","Fast delivery, poor packaging, slow service.",Investigate packaging protocols and review customer service team activity/response times immediately.
+,,,,,,2025-12-06 03:45,3.0,Not So Great The Package Delivery Was slOW and the packagaing was loose,We apologize for the slow delivery and packaging issues. We're working to improve this.,"Slow delivery, loose packaging, customer unhappy.",Investigate shipping carrier performance and packaging methods.
+,,,,,,2025-12-06 09:58,3.0,Not So Great The Package Delivery Was slOW and the packagaing was loose,We apologize for the slow delivery and loose packaging. We appreciate your feedback.,"Slow delivery, packaging issues noted.",Review shipping carrier performance and packaging materials.
